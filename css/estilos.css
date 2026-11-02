@@ -1,3 +1,7 @@
+/* Ocultar de verdad lo que lleva el atributo hidden (la portada de apertura, el botón de música, etc.) */
+[hidden]{display:none!important}
+img{max-width:100%}
+
 /* Dirección: «Alfombra roja, 1926» — una gala nocturna Art Déco.
    Fondos muy oscuros que se distinguen entre sí: carbón, terciopelo vino, azul de medianoche, negro de cine.
    Elementos de gala: alfombra, postes con cordón de terciopelo, reflectores, telón, pase de gala y claqueta.
