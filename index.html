@@ -26,8 +26,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Jost:wght@300;400;500&family=Poiret+One&display=swap">
-<link rel="preload" href="assets/quinceanera.jpg" as="image">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Jost:wght@300;400;500&family=Poiret+One&family=Great+Vibes&display=swap">
+<link rel="preload" href="assets/quinceanera.webp" as="image">
 <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -120,18 +120,20 @@
   <span class="curtain curtain--r" aria-hidden="true"></span>
   <div class="wrap message__grid">
     <div class="message__strand" aria-hidden="true"><svg class="pearl-svg" viewBox="0 0 100 600" preserveAspectRatio="xMidYMid meet" data-strand="long"></svg></div>
-    <div class="rev">
+    <p class="eyebrow message__eyebrow">Una invitación</p>
+    <div class="message__main rev">
       <svg class="message__swag pearl-svg" viewBox="0 0 300 50" data-swag="msg" aria-hidden="true"></svg>
-      <p class="eyebrow">Una invitación</p>
-      <h2 id="msgTitle">Hay noches que merecen <em>brillar</em> como en los años veinte.</h2>
+      <h2 id="msgTitle"><span>La noche</span> <span>apenas</span> <em>comienza...</em></h2>
+      <div class="m-div" aria-hidden="true"><svg viewBox="-12 -12 24 24" aria-hidden="true"><path d="M0 -11 L2 -2 L11 0 L2 2 L0 11 L-2 2 L-11 0 L-2 -2Z"/></svg></div>
       <div class="message__body">
-        <p>Quince años no se cumplen todos los días. Por eso quiero celebrarlos a lo grande: con música, luces doradas, perlas, plumas y la gente que más quiero alrededor.</p>
-        <p>Tu presencia es parte de lo que hará especial esta noche. Ven a recorrer la alfombra roja conmigo, a bailar sin prisa y a guardar un recuerdo que, como las buenas fotografías de época, no pasará de moda.</p>
+        <p>Hay momentos que merecen celebrarse con todo el glamour. Mis quince años serán una noche de luces, música y elegancia.</p>
+        <p>Quiero compartir contigo una noche inolvidable.</p>
       </div>
+      <div class="m-div" aria-hidden="true"><svg viewBox="-12 -12 24 24" aria-hidden="true"><path d="M0 -11 L2 -2 L11 0 L2 2 L0 11 L-2 2 L-11 0 L-2 -2Z"/></svg></div>
     </div>
     <div class="message__aside rev">
       <img class="gramophone" src="assets/gramofono.webp" alt="" width="561" height="922" loading="lazy">
-      Prepárate para una noche de glamour, flashes y celebración.
+      <p class="message__script">Prepárate para una noche de glamour, flashes y celebración.</p>
     </div>
   </div>
 </section>
@@ -182,7 +184,7 @@
       <p class="eyebrow">La celebración</p>
       <h2 id="evTitle">Cuándo y dónde</h2>
       <figure class="ticket-img">
-        <img src="assets/ticket.webp" width="1774" height="866" alt="Pase de gala: Laura Isabella López Ávila presenta Una noche de gala, mis quince años, Noche Flapper (XV), con alfombra roja, años 20. Fecha: sábado 5 de diciembre de 2026. Hora: 6:00 p. m. Lugar: Rancho La Doma. Traje formal. Admit One." loading="lazy" decoding="async">
+        <img src="assets/ticket.webp" width="1774" height="866" alt="Pase de gala: Laura Isabella López Ávila presenta Una noche de gala, mis quince años, Noche Flapper (XV), con alfombra roja, años 20. Fecha: sábado 5 de diciembre de 2026. Hora: 6:00 p. m. Lugar: Rancho La Doma. Traje tipo cóctel. Admit One." loading="lazy" decoding="async">
       </figure>
       <p class="ticket-facts"><span data-bind="fechaLarga"></span> · <span data-bind="hora"></span> · <span data-bind="lugar"></span></p>
       <a class="btn btn--map" id="mapBtn" href="#" target="_blank" rel="noopener">
@@ -203,11 +205,11 @@
   <div class="wrap dress__grid">
     <div class="rev">
       <p class="eyebrow">Código de vestuario</p>
-      <h2 id="drTitle"><span data-bind="vestuario"></span>de gala</h2>
+      <h2 id="drTitle"><span data-bind="vestuario"></span>con glamour</h2>
       <svg class="dress__strands pearl-svg" viewBox="0 0 420 90" data-swag="dress" aria-hidden="true"></svg>
     </div>
     <div class="dress__copy rev">
-      <p class="lead">Viste tu mejor traje formal, como para recorrer la alfombra roja.</p>
+      <p class="lead">Viste tu mejor traje tipo cóctel, como para recorrer la alfombra roja.</p>
       <div class="reserved">
         <p class="eyebrow">Colores reservados</p>
         <ul class="swatches" aria-label="Tonos reservados">

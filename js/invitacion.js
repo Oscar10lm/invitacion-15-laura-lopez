@@ -12,12 +12,12 @@ const EVENTO = {
   fechaClaqueta: "05 · 12 · 2026",
   hora: "6:00 p. m.",
   lugar: "Rancho La Doma",
-  vestuario: "Traje formal",
+  vestuario: "Traje tipo cóctel",
   whatsapp: "573158777684",                    // Prefijo +57 + número
   telefonoVisible: "+57 315 877 7684",
   limiteDia: "25",
   limiteTexto: "25 de noviembre de 2026",
-  foto: "assets/quinceanera.jpg",
+  foto: "assets/quinceanera.webp",
   mapa: "https://maps.app.goo.gl/Bq9iNpNo4b9584mU9?g_st=ic",
   fechaStub: "05.12.2026",
   sticker: ""                                  // ← Ruta del sticker PNG, p. ej. "assets/sticker.png"
