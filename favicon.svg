@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0d0b09"/>
+  <rect x="3" y="3" width="58" height="58" rx="9" fill="none" stroke="#a8843f" stroke-width="1.5"/>
+  <g transform="translate(6 18) scale(.2167)">
+    <path fill="#dcc596" fill-rule="evenodd" d="M120 38 C100 26 60 18 26 26 C12 29 4 38 6 50 C9 68 30 86 60 88 C84 90 104 78 112 68 Q120 62 128 68 C136 78 156 90 180 88 C210 86 231 68 234 50 C236 38 228 29 214 26 C180 18 140 26 120 38 Z M40 52 C52 41 84 41 97 56 C84 66 54 68 40 52 Z M200 52 C188 41 156 41 143 56 C156 66 186 68 200 52 Z"/>
+    <path d="M120 38 L120 4 M120 38 L106 10 M120 38 L134 10" stroke="#dcc596" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <circle cx="32" cy="45" r="2.6" fill="#8e2b40"/>
+</svg>

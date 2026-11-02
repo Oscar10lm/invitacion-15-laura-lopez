@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>INVITACIÓN 15 LAURA LÓPEZ</title>
+<meta name="description" content="Mis XV años · Laura Isabella López Ávila · Noche Flapper con alfombra roja · Sábado 5 de diciembre de 2026, 6:00 p. m., Rancho La Doma.">
+<meta name="theme-color" content="#0d0b09">
+<meta name="color-scheme" content="dark">
+
+<!-- Vista previa al compartir (WhatsApp, Facebook, etc.). Tras publicar, cambia "assets/og-imagen.jpg"
+     por la dirección completa, p. ej. https://TU-SITIO.netlify.app/assets/og-imagen.jpg -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="INVITACIÓN 15 LAURA LÓPEZ">
+<meta property="og:description" content="Mis XV años · Laura Isabella López Ávila · Noche Flapper con alfombra roja · Sábado 5 de diciembre de 2026, 6:00 p. m., Rancho La Doma.">
+<meta property="og:image" content="assets/og-imagen.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Jost:wght@300;400;500&family=Poiret+One&display=swap">
+<link rel="preload" href="assets/quinceanera.jpg" as="image">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<!-- Definiciones compartidas -->
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+  <defs>
+    <radialGradient id="pearlGrad" cx="50%" cy="50%" r="55%" fx="34%" fy="30%">
+      <stop offset="0" stop-color="#fffbf2"/>
+      <stop offset=".38" stop-color="#f1e7d4"/>
+      <stop offset=".78" stop-color="#cdb995"/>
+      <stop offset="1" stop-color="#8f7b5a"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#8a6a2e"/><stop offset=".45" stop-color="#f3dc9c"/><stop offset="1" stop-color="#a8843f"/>
+    </linearGradient>
+    <linearGradient id="carpetGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d0812"/><stop offset=".55" stop-color="#6a0f1f"/><stop offset="1" stop-color="#7f1426"/>
+    </linearGradient>
+    <symbol id="mask" viewBox="0 0 240 110">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+        <path d="M120 38 L120 4 M120 38 L108 9 M120 38 L132 9 M120 38 L98 17 M120 38 L142 17 M120 38 L92 27 M120 38 L148 27" opacity=".7"/>
+      </g>
+      <path fill="currentColor" fill-rule="evenodd" d="M120 38 C100 26 60 18 26 26 C12 29 4 38 6 50 C9 68 30 86 60 88 C84 90 104 78 112 68 Q120 62 128 68 C136 78 156 90 180 88 C210 86 231 68 234 50 C236 38 228 29 214 26 C180 18 140 26 120 38 Z M40 52 C52 41 84 41 97 56 C84 66 54 68 40 52 Z M200 52 C188 41 156 41 143 56 C156 66 186 68 200 52 Z"/>
+      <path fill="none" style="stroke:var(--carbon)" stroke-width="1" opacity=".55" d="M28 34 C60 26 96 30 116 44 M212 34 C180 26 144 30 124 44 M22 62 C34 78 56 82 76 80 M218 62 C206 78 184 82 164 80"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ═════════ APERTURA (telón) ═════════ -->
+<div class="opening" id="opening" hidden>
+  <div class="door door--l" aria-hidden="true"></div>
+  <div class="door door--r" aria-hidden="true"></div>
+  <div class="card" role="dialog" aria-modal="true" aria-labelledby="openingTitle">
+    <svg class="card__frame" viewBox="0 0 100 140" preserveAspectRatio="none" aria-hidden="true">
+      <polygon points="0,12 6,12 6,6 14,6 14,0 86,0 86,6 94,6 94,12 100,12 100,128 94,128 94,134 86,134 86,140 14,140 14,134 6,134 6,128 0,128"/>
+      <polygon points="3,15 9,15 9,9 17,9 17,3 83,3 83,9 91,9 91,15 97,15 97,125 91,125 91,131 83,131 83,137 17,137 17,131 9,131 9,125 3,125"/>
+    </svg>
+    <svg class="mask-emblem pearl-svg" aria-hidden="true" data-mask-emblem viewBox="0 0 240 130"></svg>
+    <p class="eyebrow">Una gala de los años 20</p>
+    <h2 id="openingTitle">Tienes una invitación</h2>
+    <p class="card__name">a los XV años de <span data-bind="nombre"></span></p>
+    <p>La alfombra roja te espera al otro lado del telón.</p>
+    <button class="btn" id="openBtn" type="button">Abrir invitación</button>
+  </div>
+</div>
+
+<audio id="bgm" src="assets/cancion.mp3" loop preload="auto"></audio>
+<button class="music" id="musicBtn" type="button" aria-pressed="false" aria-label="Reproducir música" hidden>
+  <svg class="music__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18.5a2.5 2.5 0 1 1-2.5-2.5c.3 0 .6 0 .9.2V5.6l12-2.3v12.2a2.5 2.5 0 1 1-1.6-2.3V7.4L9 9v9.5Z"/></svg>
+  <svg class="music__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h3v14H8zM13 5h3v14h-3z"/></svg>
+</button>
+
+<main id="top">
+
+<!-- ═════════ PORTADA ═════════ -->
+<header class="hero" id="portada">
+  <span class="beam beam--l" aria-hidden="true"></span>
+  <span class="beam beam--r" aria-hidden="true"></span>
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="eyebrow">Noche Flapper</p>
+      <h1 class="title"><span class="title__mis">Mis</span><span class="title__xv">Quince <em>años</em></span></h1>
+      <p class="name" data-name></p>
+      <div class="datebar" aria-label="Fecha y hora">
+        <div><small data-bind="diaSemana"></small><strong data-bind="mesAnio"></strong></div>
+        <div><strong class="day" data-bind="diaNum"></strong></div>
+        <div><small>Desde las</small><strong data-bind="hora"></strong></div>
+      </div>
+      <a class="scrollcue" href="#mensaje"><span aria-hidden="true"></span>Descubre la noche</a>
+    </div>
+
+    <figure class="portrait">
+      <svg class="portrait__fan" viewBox="0 0 1000 1000" data-fan="hero" aria-hidden="true"></svg>
+      <svg class="portrait__carpet" viewBox="0 0 400 110" data-carpet="hero" aria-hidden="true"></svg>
+      <svg class="portrait__outline" viewBox="0 0 100 125" preserveAspectRatio="none" aria-hidden="true">
+        <polygon points="0,125 0,30 7,30 7,20 16,20 16,11.25 26,11.25 26,3.75 34,3.75 34,0 68,0 68,3.75 76,3.75 76,11.25 85,11.25 85,20 93,20 93,30 100,30 100,125"/>
+      </svg>
+      <div class="arch"><img data-foto alt="" width="1308" height="1202"></div>
+      <svg class="portrait__feather feather" viewBox="0 0 300 300" data-feather="hero" aria-hidden="true"></svg>
+      <svg class="portrait__pearls pearl-svg" viewBox="0 0 600 120" data-swag="hero" aria-hidden="true"></svg>
+      <img class="sticker" data-sticker alt="" hidden>
+    </figure>
+  </div>
+</header>
+
+<!-- ═════════ MENSAJE ═════════ -->
+<div class="band" data-band="jewel" aria-hidden="true"></div>
+<section class="message" id="mensaje" aria-labelledby="msgTitle">
+  <span class="curtain curtain--l" aria-hidden="true"></span>
+  <span class="curtain curtain--r" aria-hidden="true"></span>
+  <div class="wrap message__grid">
+    <div class="message__strand" aria-hidden="true"><svg class="pearl-svg" viewBox="0 0 100 600" preserveAspectRatio="xMidYMid meet" data-strand="long"></svg></div>
+    <div class="rev">
+      <svg class="message__swag pearl-svg" viewBox="0 0 300 50" data-swag="msg" aria-hidden="true"></svg>
+      <p class="eyebrow">Una invitación</p>
+      <h2 id="msgTitle">Hay noches que merecen <em>brillar</em> como en los años veinte.</h2>
+      <div class="message__body">
+        <p>Quince años no se cumplen todos los días. Por eso quiero celebrarlos a lo grande: con música, luces doradas, perlas, plumas y la gente que más quiero alrededor.</p>
+        <p>Tu presencia es parte de lo que hará especial esta noche. Ven a recorrer la alfombra roja conmigo, a bailar sin prisa y a guardar un recuerdo que, como las buenas fotografías de época, no pasará de moda.</p>
+      </div>
+    </div>
+    <div class="message__aside rev">
+      <img class="gramophone" src="assets/gramofono.webp" alt="" width="561" height="922" loading="lazy">
+      Prepárate para una noche de glamour, flashes y celebración.
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ CONTADOR ═════════ -->
+<div class="band" data-band="film" aria-hidden="true"></div>
+<section class="countdown" id="cuenta" aria-labelledby="cdTitle">
+  <svg class="countdown__arcs" viewBox="0 0 1400 400" preserveAspectRatio="xMidYMax meet" data-arcs aria-hidden="true"></svg>
+  <div class="wrap">
+    <p class="eyebrow">Cuenta regresiva</p>
+    <h2 id="cdTitle">Falta muy poco para la gran noche</h2>
+    <div class="clapper" id="clapper">
+      <div class="clapper__sticks" aria-hidden="true">
+        <span class="stick stick--arm"></span>
+        <span class="stick stick--base"></span>
+        <span class="hinge"></span>
+      </div>
+      <div class="slate">
+        <div class="slate__row slate__row--3">
+          <div><span class="k">Producción</span><strong>XV · <span data-bind="nombre"></span></strong></div>
+          <div><span class="k">Escena</span><strong>La gran noche</strong></div>
+          <div><span class="k">Toma</span><strong>1</strong></div>
+        </div>
+        <div class="clock" id="clock" role="timer" aria-label="Tiempo restante para la celebración">
+          <div class="unit"><b data-u="d">--</b><span>Días</span></div>
+          <div class="unit"><b data-u="h">--</b><span>Horas</span></div>
+          <div class="unit"><b data-u="m">--</b><span>Minutos</span></div>
+          <div class="unit"><b data-u="s">--</b><span>Segundos</span></div>
+        </div>
+        <p class="clock-done" id="clockDone" hidden></p>
+        <div class="slate__row slate__row--3">
+          <div><span class="k">Lugar</span><strong data-bind="lugar"></strong></div>
+          <div><span class="k">Fecha</span><strong data-bind="fechaClaqueta"></strong></div>
+          <div><span class="k">Hora</span><strong data-bind="hora"></strong></div>
+        </div>
+      </div>
+    </div>
+    <p class="countdown__note"><span data-bind="fechaLarga"></span> · <span data-bind="hora"></span></p>
+  </div>
+</section>
+
+<!-- ═════════ EVENTO ═════════ -->
+<div class="band" data-band="film" aria-hidden="true"></div>
+<section class="event" id="evento" aria-labelledby="evTitle">
+  <span class="beam beam--r" aria-hidden="true"></span>
+  <div class="wrap event__grid">
+    <div class="rev">
+      <p class="eyebrow">La celebración</p>
+      <h2 id="evTitle">Cuándo y dónde</h2>
+      <figure class="ticket-img">
+        <img src="assets/ticket.webp" width="1774" height="866" alt="Pase de gala: Laura Isabella López Ávila presenta Una noche de gala, mis quince años, Noche Flapper (XV), con alfombra roja, años 20. Fecha: sábado 5 de diciembre de 2026. Hora: 6:00 p. m. Lugar: Rancho La Doma. Traje formal. Admit One." loading="lazy" decoding="async">
+      </figure>
+      <p class="ticket-facts"><span data-bind="fechaLarga"></span> · <span data-bind="hora"></span> · <span data-bind="lugar"></span></p>
+      <a class="btn btn--map" id="mapBtn" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+        Pulsa aquí para ver la ubicación
+      </a>
+    </div>
+    <figure class="event__mask rev">
+      <svg viewBox="0 0 400 300" class="pearl-svg" data-mask-large aria-hidden="true"></svg>
+      <figcaption>Detrás de cada antifaz, una noche por descubrir.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ═════════ VESTUARIO ═════════ -->
+<div class="band" data-band="jewel" aria-hidden="true"></div>
+<section class="dress" id="vestuario" aria-labelledby="drTitle">
+  <div class="wrap dress__grid">
+    <div class="rev">
+      <p class="eyebrow">Código de vestuario</p>
+      <h2 id="drTitle"><span data-bind="vestuario"></span>de gala</h2>
+      <svg class="dress__strands pearl-svg" viewBox="0 0 420 90" data-swag="dress" aria-hidden="true"></svg>
+    </div>
+    <div class="dress__copy rev">
+      <p class="lead">Viste tu mejor traje formal, como para recorrer la alfombra roja.</p>
+      <div class="reserved">
+        <p class="eyebrow">Colores reservados</p>
+        <ul class="swatches" aria-label="Tonos reservados">
+          <li><i style="--c:#0b1430"></i>Azul noche</li>
+          <li><i style="--c:#13204a"></i>Azul marino</li>
+          <li><i style="--c:#1b2c61"></i>Azul índigo</li>
+          <li><i style="--c:#233a78"></i>Azul profundo</li>
+        </ul>
+        <p><strong>Azul noche y toda la gama de azules oscuros</strong> están reservados. Te pedimos elegir otro color para tu atuendo.</p>
+      </div>
+      <p class="accessories"><svg viewBox="0 0 58 26" class="pearl-svg" data-acc aria-hidden="true"></svg>Si quieres, súmale un detalle de la época: perlas, plumas, antifaz o sombrero.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ CONFIRMACIÓN ═════════ -->
+<div class="band" data-band="jewel" aria-hidden="true"></div>
+<section class="rsvp" id="confirmar" aria-labelledby="rsTitle">
+  <div class="wrap">
+    <img class="ropes" src="assets/valla.webp" alt="" width="2108" height="419" loading="lazy" decoding="async">
+    <div class="rsvp__grid">
+      <div class="rev">
+        <p class="eyebrow">Confirmación</p>
+        <h2 id="rsTitle">¿Nos acompañas?</h2>
+        <p class="rsvp__intro">Confirma tu asistencia por WhatsApp. Escribe tu nombre y cuántas personas asisten; puedes cambiar el mensaje antes de enviarlo.</p>
+        <div class="deadline">
+          <span class="deadline__date" data-bind="limiteDia"></span>
+          <span class="deadline__txt"><strong>Fecha límite</strong><span data-bind="limiteTexto"></span></span>
+        </div>
+      </div>
+      <form class="rsvp__form rev" id="rsvpForm" novalidate>
+        <label for="rsvpMsg">Tu mensaje</label>
+        <textarea id="rsvpMsg" name="mensaje" rows="5"></textarea>
+        <p class="rsvp__hint">Al pulsar el botón se abrirá WhatsApp con este texto. Tú decides si lo envías.</p>
+        <div class="rsvp__actions">
+          <a class="btn btn--wa" id="waBtn" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3Z"/></svg>
+            Confirmar por WhatsApp
+          </a>
+          <span class="phone">Número: <output data-bind="telefonoVisible"></output><button class="linkbtn" type="button" id="copyBtn">Copiar</button></span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ CIERRE ═════════ -->
+<div class="band" data-band="jewel" aria-hidden="true"></div>
+<footer class="closing" id="cierre">
+  <span class="beam beam--l" aria-hidden="true"></span>
+  <span class="beam beam--r" aria-hidden="true"></span>
+  <svg class="closing__fan" viewBox="0 0 1000 1000" data-fan="closing" aria-hidden="true"></svg>
+  <div class="wrap">
+    <h2 class="rev">¡Te esperamos!</h2>
+    <p class="rev">Trae tu mejor sonrisa y tus ganas de bailar. La noche del <span data-bind="fechaCorta"></span> será inolvidable contigo.</p>
+    <div class="rule"><svg viewBox="0 0 70 16" class="pearl-svg" data-rule aria-hidden="true"></svg></div>
+    <p class="signoff" data-signoff></p>
+    <img class="closing__carpet" src="assets/alfombra.webp" alt="" width="928" height="414" loading="lazy" decoding="async">
+  </div>
+</footer>
+</main>
+
+<script src="js/invitacion.js"></script>
+</body>
+</html>
