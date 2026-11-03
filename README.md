@@ -2,7 +2,7 @@
 
 Página web estática (HTML, CSS y JavaScript). No necesita servidor, base de datos ni compilación: se publica tal cual.
 
-## Contenido de la carpeta
+## Contenido de la carpeta 
 
 ```
 index.html            Página de la invitación
