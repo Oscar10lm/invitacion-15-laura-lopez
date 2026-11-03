@@ -15,8 +15,8 @@ const EVENTO = {
   vestuario: "Traje tipo cóctel",
   whatsapp: "573158777684",                    // Prefijo +57 + número
   telefonoVisible: "+57 315 877 7684",
-  limiteDia: "25",
-  limiteTexto: "25 de noviembre de 2026",
+  limiteDia: "22",
+  limiteTexto: "22 de noviembre de 2026",
   foto: "assets/quinceanera.webp",
   mapa: "https://maps.app.goo.gl/Bq9iNpNo4b9584mU9?g_st=ic",
   fechaStub: "05.12.2026",
