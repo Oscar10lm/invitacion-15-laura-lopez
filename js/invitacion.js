@@ -136,17 +136,6 @@ const EVENTO = {
   { const s = $("[data-arcs]");
     for (let i=0;i<7;i++){ const R = 200 + i*70; el("path", {d:`M${700-R} 400 A ${R} ${R} 0 0 1 ${700+R} 400`}, s); } }
 
-  /* Evento: antifaz con plumas plata, azul noche y vino */
-  { const s = $("[data-mask-large]");
-    feather(s, {x:300, y:120, len:160, ang:34, bend:-18, width:24, seed:41, op:.9, color:"var(--plata)"});
-    feather(s, {x:296, y:122, len:120, ang:60, bend:-10, width:17, seed:42, op:.9, color:"var(--azul-claro)"});
-    feather(s, {x:298, y:121, len:95, ang:12, bend:-8, width:13, seed:43, op:.85, color:"var(--vino-claro)"});
-    const u = el("use", {href:"#mask", x:40, y:60, width:320, height:147}, s); u.style.color = "var(--champagne)";
-    strand(s, "M58 172 C 52 210, 60 236, 72 262", {step:9, r:3.2, graduate:.2, seed:44, thread:false});
-    strand(s, "M342 172 C 348 205, 342 224, 332 244", {step:9, r:3.2, graduate:.2, seed:45, thread:false});
-    const gem = el("polygon", {points:"200,128 207,137 200,146 193,137", fill:"var(--vino-claro)", stroke:"var(--oro-vivo)", "stroke-width":1}, s);
-  }
-
   /* Emblema de apertura */
   { const s = $("[data-mask-emblem]");
     const g = fan(s, 120, 70, 120, 190, 350, 10, 66);

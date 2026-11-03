@@ -201,9 +201,9 @@ section,header,footer{position:relative;overflow:hidden}
 .btn--map::before,.btn--map::after{box-shadow:0 0 0 2px var(--medianoche)}
 .btn--map:hover{background:var(--champagne);color:var(--carbon)}
 .btn--map svg{width:20px;height:20px;fill:currentColor}
-.event__mask{position:relative;justify-self:center;width:100%;max-width:440px;margin:0}
-.event__mask svg{width:100%;height:auto;display:block}
-.event__mask figcaption{margin-top:18px;text-align:center;font-family:var(--f-display);font-style:italic;font-size:1.15rem;color:var(--champagne)}
+.event__mask{position:relative;justify-self:center;width:100%;max-width:480px;margin:0}
+.event__mask img{width:100%;height:auto;display:block;filter:drop-shadow(0 20px 30px rgba(0,0,0,.5))}
+.event__mask figcaption{margin-top:10px;text-align:center;font-family:"Great Vibes","Pinyon Script","Snell Roundhand","Apple Chancery",cursive;font-size:clamp(2.2rem,4vw,3rem);line-height:1.1;color:var(--oro-vivo)}
 
 /* ───────── VESTUARIO ───────── */
 .dress{padding-block:clamp(72px,9vw,120px);background:radial-gradient(60% 70% at 100% 100%, rgba(20,31,69,.7), transparent 70%),radial-gradient(70% 90% at 10% 0%, #2a1a10 0%, #140d08 55%, var(--carbon) 100%)}
